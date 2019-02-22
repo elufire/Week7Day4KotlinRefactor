@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+    <EditText
+        android:id="@+id/studentSsn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ssn"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentMajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/major"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentMinor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/minor"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentGpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/gpa"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dob"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentHomeCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/homecity"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentHomeState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/home_state"
+        android:textAlignment="center"/>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/addStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_student"
+        app:layout_constraintRight_toLeftOf="@id/goBack"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back"
+        app:layout_constraintLeft_toRightOf="@id/addStudent"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/deleteStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        app:layout_constraintLeft_toRightOf="@id/goBack"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/updateStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/update_student"
+        app:layout_constraintTop_toBottomOf="@id/addStudent"/>
+
+    <Button
+        android:id="@+id/getoneStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/get_one_student"
+        app:layout_constraintTop_toBottomOf="@id/goBack"
+        app:layout_constraintLeft_toRightOf="@id/updateStudent"/>
+
+</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMainRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+</LinearLayout>

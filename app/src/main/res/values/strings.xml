@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Week7Day4KotlinRefactor</string>
+    <string name="ssn">SSN</string>
+    <string name="name">Name</string>
+    <string name="major">Major</string>
+    <string name="minor">Minor</string>
+    <string name="gpa">GPA</string>
+    <string name="dob">dob</string>
+    <string name="homecity">Home City</string>
+    <string name="home_state">Home State</string>
+    <string name="add_student">Add Student</string>
+    <string name="edit_table">Edit Table</string>
+    <string name="go_back">Go Back</string>
+    <string name="delete">Delete</string>
+    <string name="update_student">Update Student</string>
+    <string name="get_one_student">Get One Student</string>
+</resources>
